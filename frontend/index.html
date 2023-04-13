@@ -15,7 +15,7 @@
                     <img src="logo.png" alt="logo" width="125px" >
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuitems">
                         <li><a href="">Help</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">Contact</a></li>
@@ -23,6 +23,7 @@
                         <li><a href="">Login</a></li>
                     </ul>
                 </nav>
+                <img src="menu.png" alt="menu_icon" class="menu" onclick="menu_drop_down()" >
             </div>
             <div class="row">
                 <div class="col-2">
@@ -36,5 +37,66 @@
             </div>
         </div>
     </div>
+    <div class="small-container">
+        <h2>FEATURED PRODUCTS</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="logo.png" alt="product_1">
+                <h4>product_1</h4>
+                <p>price of that product</p>
+            </div>
+            <div class="col-4">
+                <img src="logo.png" alt="product_1">
+                <h4>product_2</h4>
+                <p>price of that product</p>
+            </div>
+            <div class="col-4">
+                <img src="logo.png" alt="product_1">
+                <h4>product_3</h4>
+                <p>price of that product</p>
+            </div>
+            <div class="col-4">
+                <img src="logo.png" alt="product_1">
+                <h4>product_4</h4>
+                <p>price of that product</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="contanier">
+            <div class="row">
+                <div class="col_1">
+                    <h1>small subtitile</h1>
+                    <p>general content must be written here.</p>
+                </div>
+                <div class="col_2">
+                    <img src="logo.png" alt="logo">
+                    <p>general content must be written here.</p>
+                </div>
+                <div class="col_3">
+                   
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>instagram</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                    </ul> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menu_drop_down(){
+            if( menuitems.style.maxHeight == "0px"){
+                menuitems.style.maxHeight = "200px"
+            }
+            else{
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 </html>
